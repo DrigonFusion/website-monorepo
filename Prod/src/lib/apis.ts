@@ -75,7 +75,7 @@ async function getvideodata(videoid: string): Promise<YouTubeVideoData> {
 
     return videoData;
   } catch (error) {
-    throw new Error('Failed to fetch video data: ' + error.message);
+    throw new Error('Failed to fetch video data: ' + error);
   }
 }
 async function getuserdata(channelId: string): Promise<YouTubePosterData> {
@@ -105,7 +105,7 @@ async function getuserdata(channelId: string): Promise<YouTubePosterData> {
 
       return channelData;
   } catch (error) {
-      throw new Error('Failed to fetch channel data: ' + error.message);
+      throw new Error('Failed to fetch channel data: ' + error);
   }
 }
 
