@@ -1,5 +1,7 @@
 # DrigonFusion Website Full
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/51961fd8-3f6c-4f6f-bbb4-ef9da4deff3a/deploy-status)](https://app.netlify.com/sites/drigonfusion/deploys)
+
 This is the main website for DrigonFusion, a website for the DrigonFusion project.
 
 ## Development
