@@ -1,5 +1,3 @@
-This website is not the main production website, this is used for local development making sure that all pages are working properly for the initial release of the website. DO NOT PUBLISH THIS WEBSITE AS PRODUCTION!
-
 # DrigonFusion Website Full
 
 This is the main website for DrigonFusion, a website for the DrigonFusion project.

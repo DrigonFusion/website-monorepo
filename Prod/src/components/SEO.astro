@@ -1,16 +1,16 @@
 ---
 export interface Props {
-	title: string;
-	description: string;
-  icon: string;
-  banner: string;
-  page: URL;
+	title?: string;
+	description?: string;
+  icon?: string;
+  banner?: string;
 }
-const { title, description, icon, banner, page } = Astro.props;
+const { title="DrigonFusion", description="A website for DrigonFusion", icon="/favicon.png", banner="/images/banner.png" } = Astro.props;
 // domain
 const domain = String(Astro.site)
 const banner_formatted = banner.startsWith('/') ? banner.slice(1) : banner;
 import { ViewTransitions } from 'astro:transitions';
+const page = Astro.url.pathname;
 ---
 <!-- DO NOT ADD THE HEAD TAG -->
 <!-- sitemap, favicon, title, and metadata -->

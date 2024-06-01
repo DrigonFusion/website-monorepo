@@ -23,26 +23,28 @@ const team = defineCollection({
   }),
 });
 
-const gaming = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    image: z.object({
-      url: z.string().default("https://cdn.drigonfusion.xyz/static/images/blog/default.png"),
-      alt: z.string().default("DrigonFusion Blog Post Banner"),
-    }),
-    pubDate: z.date(),
-    authors: z.array(z.string()),
-    tags: z.array(z.string()),
-  }),
-});
+// Gaming will be in a separate website
+// const gaming = defineCollection({
+//   schema: z.object({
+//     title: z.string(),
+//     description: z.string(),
+//     image: z.object({
+//       url: z.string().default("https://cdn.drigonfusion.xyz/static/images/blog/default.png"),
+//       alt: z.string().default("DrigonFusion Blog Post Banner"),
+//     }),
+//     pubDate: z.date(),
+//     authors: z.array(z.string()),
+//     tags: z.array(z.string()),
+//   }),
+// });
 
-const code = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-  }),
-});
+// Code will be in a separate website
+// const code = defineCollection({
+//   schema: z.object({
+//     title: z.string(),
+//     description: z.string(),
+//   }),
+// });
 
 const news = defineCollection({
   schema: z.object({
@@ -58,10 +60,11 @@ const news = defineCollection({
   }),
 });
 
-export const collections = {
-  blog,
-  team,
-  gaming,
-  code,
-  news,
-};
+// DO NOT EXPORT THESE UNTIL THE PAGE IT IT RELATED TO IS DONE!
+// export const collections = {
+//   blog,
+//   team,
+//   gaming,
+//   code,
+//   news,
+// };

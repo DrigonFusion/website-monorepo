@@ -1,0 +1,20 @@
+---
+import { blockedUserAgents } from '@/lib/consts';
+import Layout from '../layouts/Layout.astro';
+
+import { SendDiscordWebhook } from '@/lib/apis';
+
+const useragent = Astro.request.headers.get('user-agent');
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+if (useragent && !blockedUserAgents.includes(useragent)) {
+  await SendDiscordWebhook(`404 reached | ${useragent} | on: ${canonicalURL}`);
+}
+---
+
+<Layout title="404">
+	<main>
+		<h1>404</h1>
+		<p>Page not found</p>
+    <p>You do not need to report this error as it is automatically reported, please read this blog post for more information: <a href="/blog/404-error-reporting">404 error reporting</a></p>
+	</main>
+</Layout>
