@@ -1,5 +1,4 @@
-// Commented out temporarily
-// import { defineCollection, z } from "astro:content";
+import { defineCollection, z } from "astro:content";
 
 // Commented out temporarily
 // const blog = defineCollection({
@@ -16,15 +15,15 @@
 //   }),
 // });
 
-// Commented out temporarily
-// const team = defineCollection({
-//   schema: z.object({
-//     name: z.string(),
-//     image: z.string().default("https://cdn.drigonfusion.xyz/static/images/avatar.png"),
-//     roles: z.array(z.string()),
-//     signature: z.string(),
-//   }),
-// });
+
+const team = defineCollection({
+  schema: z.object({
+    name: z.string(),
+    image: z.string().default("https://cdn.drigonfusion.xyz/static/images/avatar.png"),
+    roles: z.array(z.string()),
+    signature: z.string(),
+  }),
+});
 
 // Gaming will be in a separate website
 // const gaming = defineCollection({

@@ -2,8 +2,8 @@
 import { blockedUserAgents } from '@/lib/consts';
 import Layout from '../layouts/Layout.astro';
 
+// Error reporting currently does not work in production
 import { SendDiscordWebhook } from '@/lib/apis';
-
 const useragent = Astro.request.headers.get('user-agent');
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 if (useragent && !blockedUserAgents.includes(useragent)) {
