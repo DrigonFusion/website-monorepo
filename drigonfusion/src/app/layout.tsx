@@ -51,7 +51,7 @@ export default async function RootLayout({
               disableTransitionOnChange
             >
               <div className="min-h-screen">
-                <Navbar userPFP={PFP} userName={userName} />
+                <Navbar userPFP={PFP} userName={userName!} />
                 {children}
               </div>
               <Footer />
