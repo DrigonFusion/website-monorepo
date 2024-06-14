@@ -1,13 +1,19 @@
-import Link from "next/link";
-import { db } from "~/server/db";
+import { pages } from "~/lib/consts";
+import { Cards } from "@/components/nav-buttons-home";
 
 export default async function HomePage() {
-  const blogPosts = await db.query.blogPosts.findMany();
-  const newsPosts = await db.query.newsPosts.findMany();
-  const gamingPosts = await db.query.gamingPosts.findMany();
   return (
-    <main>
-
+    <main className="p-5">
+      <h1 className="text-3xl font-bold text-center">DrigonFusion</h1>
+      <p className="text-center">Pages</p>
+      <div className="grid lg:grid-cols-2 2xl:grid-cols-3 w-full auto-rows-auto gap-4 grid-flow-row">
+        {
+          pages.map((data) => (
+            <Cards key={data.name} data={data} />
+          ))
+        }
+      </div>
     </main>
   );
-}
+};
+
