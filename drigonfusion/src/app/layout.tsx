@@ -33,8 +33,10 @@ export default async function RootLayout({
   let userName = await getUserData.name.get.nickname();
   if (!userName) {
     userName = await getUserData.name.get.first();
-  } else {
+  } else if (!userName) {
     userName = "Please sign in";
+  } else {
+    userName = "Welcome!";
   }
   return (
     <ClerkProvider>

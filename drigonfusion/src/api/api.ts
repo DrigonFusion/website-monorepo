@@ -66,5 +66,13 @@ export const getUserData = {
         }
       },
     }
+  },
+  signedIn: async () => {
+    const user = await currentUser();
+    if (!user) {
+      return false
+    } else {
+      return true
+    }
   }
 }

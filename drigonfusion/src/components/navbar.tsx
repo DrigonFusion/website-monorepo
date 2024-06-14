@@ -36,7 +36,7 @@ export function Navbar({ userPFP, userName }: NavbarProps): React.JSX.Element {
       <div className="flex-1 flex justify-end">
       <Avatar>
         <AvatarImage src={userPFP} alt={userName} />
-        <AvatarFallback>User</AvatarFallback>
+        <AvatarFallback>{userName}</AvatarFallback>
       </Avatar>
       </div>
     </div>

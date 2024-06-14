@@ -9,3 +9,9 @@ export const pages = [
 export const socials = [
   { name: "GitHub", href: "https://github.com/drigonfusion", description: "" },
 ]
+
+// `/code` is added when the card is generated
+export const codeRefrences = [
+  { name: "HTML", href: "/html-reference", description: "Complete HTML refrence"},
+  { name: "CSS", href: "/css-reference", description: "Complete CSS refrence"},
+]

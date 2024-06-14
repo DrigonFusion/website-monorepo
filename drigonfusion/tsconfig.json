@@ -38,6 +38,6 @@
     "**/*.cjs",
     "**/*.js",
     ".next/types/**/*.ts"
-  ],
+, "src/app/code/html-reference/page.tsx", "next.config.mjs", "src/app/code/html-reference/html/page.mdx", "src/app/code/html-reference/doctype/page.mdx"  ],
   "exclude": ["node_modules"]
 }
