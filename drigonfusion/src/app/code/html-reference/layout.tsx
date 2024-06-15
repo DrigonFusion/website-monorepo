@@ -8,9 +8,9 @@ export default async function HTMLLayout({
 }) {
   return (
     <main className='flex flex-row min-h-screen'>
-      <div className='bg-secondary text-secondary-foreground w-44 h-full'>
-        <h4 className='prose-h4 text-center'>HTML Reference</h4>
-        <div className='overflow-auto max-h-[calc(100vh)]'>
+      <div className='bg-secondary text-secondary-foreground w-44 h-full sticky top-0 z-10 shadow-lg'>
+        <h4 className='prose-h4 text-center shadow-lg'>HTML Reference</h4>
+        <div className='overflow-auto max-h-[calc(100vh-1.75rem)]'>
           <ul className='space-y-2'>
             {
               list.map((data) => (
@@ -104,406 +104,354 @@ const list = [
   },
   {
     "title": "section",
-    "href": "/code/html-reference/section"
+    "href": "/code/html-reference/body/section"
   },
   {
     "title": "nav",
-    "href": "/code/html-reference/nav"
+    "href": "/code/html-reference/body/nav"
   },
   {
     "title": "article",
-    "href": "/code/html-reference/article"
+    "href": "/code/html-reference/body/article"
   },
   {
     "title": "aside",
-    "href": "/code/html-reference/aside"
+    "href": "/code/html-reference/body/aside"
   },
   {
-    "title": "h1",
-    "href": "/code/html-reference/h1"
-  },
-  {
-    "title": "h2",
-    "href": "/code/html-reference/h2"
-  },
-  {
-    "title": "h3",
-    "href": "/code/html-reference/h3"
-  },
-  {
-    "title": "h4",
-    "href": "/code/html-reference/h4"
-  },
-  {
-    "title": "h5",
-    "href": "/code/html-reference/h5"
-  },
-  {
-    "title": "h6",
-    "href": "/code/html-reference/h6"
+    "title": "h1 - h6",
+    "href": "/code/html-reference/body/h"
   },
   {
     "title": "header",
-    "href": "/code/html-reference/header"
+    "href": "/code/html-reference/body/header"
   },
   {
     "title": "footer",
-    "href": "/code/html-reference/footer"
+    "href": "/code/html-reference/body/footer"
   },
   {
     "title": "address",
-    "href": "/code/html-reference/address"
+    "href": "/code/html-reference/body/address"
   },
   {
     "title": "main",
-    "href": "/code/html-reference/main"
+    "href": "/code/html-reference/body/main"
   },
   {
     "title": "p",
-    "href": "/code/html-reference/p"
+    "href": "/code/html-reference/body/p"
   },
   {
     "title": "hr",
-    "href": "/code/html-reference/hr"
+    "href": "/code/html-reference/body/hr"
   },
   {
     "title": "pre",
-    "href": "/code/html-reference/pre"
+    "href": "/code/html-reference/body/pre"
   },
   {
     "title": "blockquote",
-    "href": "/code/html-reference/blockquote"
+    "href": "/code/html-reference/body/blockquote"
   },
   {
-    "title": "ol",
-    "href": "/code/html-reference/ol"
-  },
-  {
-    "title": "ul",
-    "href": "/code/html-reference/ul"
-  },
-  {
-    "title": "li",
-    "href": "/code/html-reference/li"
-  },
-  {
-    "title": "dl",
-    "href": "/code/html-reference/dl"
-  },
-  {
-    "title": "dt",
-    "href": "/code/html-reference/dt"
-  },
-  {
-    "title": "dd",
-    "href": "/code/html-reference/dd"
+    "title": "lists",
+    "href": "/code/html-reference/body/lists"
   },
   {
     "title": "figure",
-    "href": "/code/html-reference/figure"
-  },
-  {
-    "title": "figcaption",
-    "href": "/code/html-reference/figcaption"
+    "href": "/code/html-reference/body/figure"
   },
   {
     "title": "div",
-    "href": "/code/html-reference/div"
+    "href": "/code/html-reference/body/div"
   },
   {
     "title": "a",
-    "href": "/code/html-reference/a"
+    "href": "/code/html-reference/body/a"
   },
   {
     "title": "em",
-    "href": "/code/html-reference/em"
+    "href": "/code/html-reference/body/em"
   },
   {
     "title": "strong",
-    "href": "/code/html-reference/strong"
+    "href": "/code/html-reference/body/strong"
   },
   {
     "title": "small",
-    "href": "/code/html-reference/small"
+    "href": "/code/html-reference/body/small"
   },
   {
     "title": "s",
-    "href": "/code/html-reference/s"
+    "href": "/code/html-reference/body/s"
   },
   {
     "title": "cite",
-    "href": "/code/html-reference/cite"
+    "href": "/code/html-reference/body/cite"
   },
   {
     "title": "q",
-    "href": "/code/html-reference/q"
+    "href": "/code/html-reference/body/q"
   },
   {
     "title": "dfn",
-    "href": "/code/html-reference/dfn"
+    "href": "/code/html-reference/body/dfn"
   },
   {
     "title": "abbr",
-    "href": "/code/html-reference/abbr"
+    "href": "/code/html-reference/body/abbr"
   },
   {
     "title": "data",
-    "href": "/code/html-reference/data"
+    "href": "/code/html-reference/body/data"
   },
   {
     "title": "time",
-    "href": "/code/html-reference/time"
+    "href": "/code/html-reference/body/time"
   },
   {
     "title": "code",
-    "href": "/code/html-reference/code"
+    "href": "/code/html-reference/body/code"
   },
   {
     "title": "var",
-    "href": "/code/html-reference/var"
+    "href": "/code/html-reference/body/var"
   },
   {
     "title": "samp",
-    "href": "/code/html-reference/samp"
+    "href": "/code/html-reference/body/samp"
   },
   {
     "title": "kbd",
-    "href": "/code/html-reference/kbd"
+    "href": "/code/html-reference/body/kbd"
   },
   {
     "title": "sub",
-    "href": "/code/html-reference/sub"
+    "href": "/code/html-reference/body/sub"
   },
   {
     "title": "sup",
-    "href": "/code/html-reference/sup"
+    "href": "/code/html-reference/body/sup"
   },
   {
     "title": "i",
-    "href": "/code/html-reference/i"
+    "href": "/code/html-reference/body/i"
   },
   {
     "title": "b",
-    "href": "/code/html-reference/b"
+    "href": "/code/html-reference/body/b"
   },
   {
     "title": "u",
-    "href": "/code/html-reference/u"
+    "href": "/code/html-reference/body/u"
   },
   {
     "title": "mark",
-    "href": "/code/html-reference/mark"
+    "href": "/code/html-reference/body/mark"
   },
   {
     "title": "ruby",
-    "href": "/code/html-reference/ruby"
-  },
-  {
-    "title": "rt",
-    "href": "/code/html-reference/rt"
-  },
-  {
-    "title": "rp",
-    "href": "/code/html-reference/rp"
+    "href": "/code/html-reference/body/ruby"
   },
   {
     "title": "bdi",
-    "href": "/code/html-reference/bdi"
+    "href": "/code/html-reference/body/bdi"
   },
   {
     "title": "bdo",
-    "href": "/code/html-reference/bdo"
+    "href": "/code/html-reference/body/bdo"
   },
   {
     "title": "span",
-    "href": "/code/html-reference/span"
+    "href": "/code/html-reference/body/span"
   },
   {
     "title": "br",
-    "href": "/code/html-reference/br"
+    "href": "/code/html-reference/body/br"
   },
   {
     "title": "wbr",
-    "href": "/code/html-reference/wbr"
+    "href": "/code/html-reference/body/wbr"
   },
   {
     "title": "ins",
-    "href": "/code/html-reference/ins"
+    "href": "/code/html-reference/body/ins"
   },
   {
     "title": "del",
-    "href": "/code/html-reference/del"
+    "href": "/code/html-reference/body/del"
   },
   {
     "title": "picture",
-    "href": "/code/html-reference/picture"
+    "href": "/code/html-reference/body/picture"
   },
   {
     "title": "source",
-    "href": "/code/html-reference/source"
+    "href": "/code/html-reference/body/source"
   },
   {
     "title": "img",
-    "href": "/code/html-reference/img"
+    "href": "/code/html-reference/body/img"
   },
   {
     "title": "iframe",
-    "href": "/code/html-reference/iframe"
+    "href": "/code/html-reference/body/iframe"
   },
   {
     "title": "embed",
-    "href": "/code/html-reference/embed"
+    "href": "/code/html-reference/body/embed"
   },
   {
     "title": "object",
-    "href": "/code/html-reference/object"
+    "href": "/code/html-reference/body/object"
   },
   {
     "title": "param",
-    "href": "/code/html-reference/param"
+    "href": "/code/html-reference/body/param"
   },
   {
     "title": "video",
-    "href": "/code/html-reference/video"
+    "href": "/code/html-reference/body/video"
   },
   {
     "title": "audio",
-    "href": "/code/html-reference/audio"
+    "href": "/code/html-reference/body/audio"
   },
   {
     "title": "track",
-    "href": "/code/html-reference/track"
+    "href": "/code/html-reference/body/track"
   },
   {
     "title": "map",
-    "href": "/code/html-reference/map"
+    "href": "/code/html-reference/body/map"
   },
   {
     "title": "area",
-    "href": "/code/html-reference/area"
+    "href": "/code/html-reference/body/area"
   },
   {
     "title": "table",
-    "href": "/code/html-reference/table"
+    "href": "/code/html-reference/body/table"
   },
   {
     "title": "caption",
-    "href": "/code/html-reference/caption"
+    "href": "/code/html-reference/body/caption"
   },
   {
     "title": "colgroup",
-    "href": "/code/html-reference/colgroup"
+    "href": "/code/html-reference/body/colgroup"
   },
   {
     "title": "col",
-    "href": "/code/html-reference/col"
+    "href": "/code/html-reference/body/col"
   },
   {
     "title": "tbody",
-    "href": "/code/html-reference/tbody"
+    "href": "/code/html-reference/body/tbody"
   },
   {
     "title": "thead",
-    "href": "/code/html-reference/thead"
+    "href": "/code/html-reference/body/thead"
   },
   {
     "title": "tfoot",
-    "href": "/code/html-reference/tfoot"
+    "href": "/code/html-reference/body/tfoot"
   },
   {
     "title": "tr",
-    "href": "/code/html-reference/tr"
+    "href": "/code/html-reference/body/tr"
   },
   {
     "title": "td",
-    "href": "/code/html-reference/td"
+    "href": "/code/html-reference/body/td"
   },
   {
     "title": "th",
-    "href": "/code/html-reference/th"
+    "href": "/code/html-reference/body/th"
   },
   {
     "title": "form",
-    "href": "/code/html-reference/form"
+    "href": "/code/html-reference/body/form"
   },
   {
     "title": "label",
-    "href": "/code/html-reference/label"
+    "href": "/code/html-reference/body/label"
   },
   {
     "title": "input",
-    "href": "/code/html-reference/input"
+    "href": "/code/html-reference/body/input"
   },
   {
     "title": "button",
-    "href": "/code/html-reference/button"
+    "href": "/code/html-reference/body/button"
   },
   {
     "title": "select",
-    "href": "/code/html-reference/select"
+    "href": "/code/html-reference/body/select"
   },
   {
     "title": "datalist",
-    "href": "/code/html-reference/datalist"
+    "href": "/code/html-reference/body/datalist"
   },
   {
     "title": "optgroup",
-    "href": "/code/html-reference/optgroup"
+    "href": "/code/html-reference/body/optgroup"
   },
   {
     "title": "option",
-    "href": "/code/html-reference/option"
+    "href": "/code/html-reference/body/option"
   },
   {
     "title": "textarea",
-    "href": "/code/html-reference/textarea"
+    "href": "/code/html-reference/body/textarea"
   },
   {
     "title": "output",
-    "href": "/code/html-reference/output"
+    "href": "/code/html-reference/body/output"
   },
   {
     "title": "progress",
-    "href": "/code/html-reference/progress"
+    "href": "/code/html-reference/body/progress"
   },
   {
     "title": "meter",
-    "href": "/code/html-reference/meter"
+    "href": "/code/html-reference/body/meter"
   },
   {
     "title": "fieldset",
-    "href": "/code/html-reference/fieldset"
+    "href": "/code/html-reference/body/fieldset"
   },
   {
     "title": "legend",
-    "href": "/code/html-reference/legend"
+    "href": "/code/html-reference/body/legend"
   },
   {
     "title": "details",
-    "href": "/code/html-reference/details"
+    "href": "/code/html-reference/body/details"
   },
   {
     "title": "summary",
-    "href": "/code/html-reference/summary"
+    "href": "/code/html-reference/body/summary"
   },
   {
     "title": "dialog",
-    "href": "/code/html-reference/dialog"
+    "href": "/code/html-reference/body/dialog"
   },
   {
     "title": "template",
-    "href": "/code/html-reference/template"
+    "href": "/code/html-reference/body/template"
   },
   {
     "title": "canvas",
-    "href": "/code/html-reference/canvas"
+    "href": "/code/html-reference/body/canvas"
   },
   {
     "title": "slot",
-    "href": "/code/html-reference/slot"
+    "href": "/code/html-reference/body/slot"
   },
   {
     "title": "shadow",
-    "href": "/code/html-reference/shadow"
+    "href": "/code/html-reference/body/shadow"
   }  
 ]

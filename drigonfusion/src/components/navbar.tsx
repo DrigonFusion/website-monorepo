@@ -26,7 +26,7 @@ interface NavbarProps {
 
 export function Navbar({ userPFP, userName }: NavbarProps): React.JSX.Element {
   return (
-    <div className="flex items-center justify-between h-16 bg-secondary text-secondary-foreground w-full top-0 p-5">
+    <div className="flex items-center justify-between h-16 bg-secondary text-secondary-foreground w-full top-0 p-5 shadow-lg">
       <div className="flex-1 items-center">
 
       </div>

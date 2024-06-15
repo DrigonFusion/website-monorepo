@@ -1,0 +1,17 @@
+import { Separator } from "~/components/ui/separator";
+
+# map
+<Separator />
+The `map` element is used to define an image map. An image map is a set of clickable areas on an image.
+
+Example:
+```html
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+```
+{/* This example is from https://www.w3schools.com/tags/tag_map.asp please update before official release */}
